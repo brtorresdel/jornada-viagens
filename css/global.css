@@ -21,11 +21,25 @@
   --menu-text-weight: 500;
 }
 
-* {
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text-primary-color);
 }
 
 h1 {
@@ -33,4 +47,44 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: var(--titles-weight);
   color: var(--primary-color);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  text-align: center;
+  margin: 0;
+}
+
+.section-title hr {
+  border: 0;
+  height: 4px;
+  width: 180px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px auto;
+}
+
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 64px;
+  font-weight: var(--text-weight);
+  color: var(--text-secondary-color);
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 16px;
+  line-height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--primary-color);
+  }
 }
