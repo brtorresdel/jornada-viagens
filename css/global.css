@@ -42,11 +42,25 @@ body {
   color: var(--text-primary-color);
 }
 
+section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+section.hero {
+  width: 100%;
+  margin: 0;
+}
+
 h1 {
   color: var(--text-primary-color);
   font-family: "Montserrat", sans-serif;
   font-weight: var(--titles-weight);
   color: var(--primary-color);
+}
+
+.section-title {
+  margin-bottom: 32px;
 }
 
 .section-title h2 {
@@ -69,7 +83,7 @@ h1 {
   display: inline-block;
   width: 280px;
   height: 64px;
-  font-weight: var(--text-weight);
+  font-weight: var(--titles-weight);
   color: var(--text-secondary-color);
   background-color: var(--secondary-color);
   text-decoration: none;
@@ -78,13 +92,27 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    width: 748px;
+  }
+
   .section-title h2 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    width: 1024px;
+  }
+
   .button:hover {
     background-color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section {
+    width: 1400px;
   }
 }
