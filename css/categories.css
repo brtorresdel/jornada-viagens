@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 }
 
 .categories-cards {
@@ -9,15 +10,23 @@
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
-  max-width: 1440px;
+  max-width: 900px;
 }
 
 .categories-cards .card {
   background-color: transparent;
+  display: inline-block;
+  width: 312px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .categories-cards .card img {
   width: 80px;
+  height: 80px;
 }
 
 .categories-cards .card a {
@@ -25,6 +34,10 @@
   color: var(--text-primary-color);
   font-weight: var(--titles-weight);
   font-size: 28px;
+}
+
+.categories-cards .card h3 {
+    font-size: 28px;
 }
 
 @media screen and (min-width: 768px) {
@@ -41,4 +54,14 @@
   .categories-cards {
     flex-wrap: nowrap;
   }
+
+  .categories-cards .card {
+    width: 281px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+   .categories-cards {
+     max-width: 1300px;
+   }
 }
