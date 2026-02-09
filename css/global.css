@@ -59,8 +59,15 @@ h1 {
   color: var(--primary-color);
 }
 
-.section-title {
-  margin-bottom: 32px;
+.content-title {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+}
+
+.content-text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
 }
 
 .section-title h2 {
@@ -76,7 +83,7 @@ h1 {
   width: 180px;
   background-color: var(--secondary-color);
   border: none;
-  margin: 16px auto 32px auto;
+  margin: 16px auto;
 }
 
 .button {
