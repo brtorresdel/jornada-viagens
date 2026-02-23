@@ -54,3 +54,26 @@
     height: auto;
 }
 
+@media screen and (min-width: 768px) {
+    .footer .footer-content {
+        width: 648px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer .footer-content {
+        width: 450px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer .footer-content p {
+        text-align: left;
+    }
+}
+
