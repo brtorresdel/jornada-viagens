@@ -15,6 +15,15 @@
   width: 312px;
 }
 
+.payments.japan .text-content .content-title {
+  font-size: 40px;
+  margin-top: 20px
+}
+
+.payments.japan .text-content .content-title.sub {
+  font-size: 28px;
+}
+
 .payments .image-content {
   width: 100%;
   display: grid;
@@ -36,6 +45,21 @@
 
 .payments .image-content .image.people {
   background: url('../img/payments-people-img-mobile.jpg') no-repeat;
+  background-size: cover;
+}
+
+.payments.japan .image-content .image.japan-tower {
+  background: url('../img/payments-japan-1.png') no-repeat center;
+  background-size: cover;
+}
+
+.payments.japan .image-content .image.japan-city {
+  background: url('../img/payments-japan-2.png') no-repeat center;
+  background-size: cover;
+}
+
+.payments.japan .image-content .image.japan-person {
+  background: url('../img/payments-japan-3.png') no-repeat center;
   background-size: cover;
 }
 
